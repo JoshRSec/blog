@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://joshrsec.github.io/blog/sitemap.xml
