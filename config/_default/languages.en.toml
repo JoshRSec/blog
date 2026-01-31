@@ -1,0 +1,26 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Joshua Robbins"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  # description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+name = "Joshua Robbins"
+headline = "Welcome to my corner of the digital world!"
+image = "img/me.jpg"
+bio = "I write about the things I’m building, learning, breaking and fixing across Computer Science and Cyber Security."
+links = [
+  { twitter = "https://twitter.com/Piv0tsec" },
+  { linkedin = "https://www.linkedin.com/in/joshua-robbins-335152123/" },
+  { github = "https://github.com/JoshRSec" }
+]
