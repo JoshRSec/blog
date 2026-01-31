@@ -69,11 +69,11 @@ With WordPress, content lives in a database. With Hugo, every post becomes:
 
 Everything is:
 
-- version‑controlled  
-- portable  
-- editable in any text editor  
-- easy to back up  
-- easy to automate  
+- Version‑controlled  
+- Portable  
+- Editable in any text editor  
+- Easy to back up  
+- Easy to automate  
 
 It’s the difference between renting and owning.
 
@@ -122,9 +122,9 @@ WordPress stores captions like this:
 
 If you remove the shortcode wrapper incorrectly, you either:
 
-- lose the image  
-- keep the caption text  
-- or break the HTML  
+- Lose the image  
+- Keep the caption text  
+- Break the HTML  
 
 The final solution extracts **only the `<img>` tag**, discarding the caption text entirely. This preserves the image while avoiding duplicated captions in Markdown.
 
@@ -148,10 +148,10 @@ Otherwise, the image disappears before extraction.
 
 Every `<img>` tag is:
 
-- parsed  
-- downloaded  
-- saved into the post’s `img/` folder  
-- replaced with a Markdown image reference  
+- Parsed  
+- Downloaded  
+- Saved into the post’s `img/` folder  
+- Replaced with a Markdown image reference  
 
 This ensures the site is fully self‑contained and not dependent on external WordPress media URLs.
 
@@ -189,11 +189,11 @@ After running the script, every WordPress post became a tidy Hugo content bundle
 
 Deploying to GitHub Pages completed the transformation. Now my blog is:
 
-- static  
-- secure  
-- fast  
-- version‑controlled  
-- easy to maintain  
+- Static  
+- Secure  
+- Fast  
+- Version‑controlled  
+- Easy to maintain  
 
 No PHP. No plugins. Low attack surface.
 
