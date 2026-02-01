@@ -6,7 +6,7 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 mainSections = ["posts"]
-colorScheme = "blowfish"
+colorScheme = "slate"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 

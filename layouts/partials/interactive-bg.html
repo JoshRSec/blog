@@ -1,0 +1,112 @@
+<div id="mesh-bg"></div>
+<div id="mesh-overlay"></div>
+
+<style>
+  /* Base mesh layer */
+  #mesh-bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    mask-image: linear-gradient(to bottom, black 0%, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 40%, transparent 100%);
+  }
+
+  /* Light-mode softening overlay */
+  #mesh-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    mix-blend-mode: lighten;
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  body.dark #mesh-overlay {
+    background: none;
+  }
+
+  /* Subtle grid overlay to enhance "network topology" feel */
+  #mesh-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Mesh canvas styling */
+  #mesh-bg canvas {
+    transition: filter 0.6s ease;
+    filter: blur(0px) brightness(1);
+    animation: drift 60s linear infinite;
+  }
+
+  /* Slow vertical drift for "large network" feel */
+  @keyframes drift {
+    from { transform: translateY(0px); }
+    to   { transform: translateY(-40px); }
+  }
+
+  /* Scroll-based blur stages */
+  body.scrolled-1 #mesh-bg canvas {
+    filter: blur(4px) brightness(0.95);
+  }
+
+  body.scrolled-2 #mesh-bg canvas {
+    filter: blur(8px) brightness(0.85);
+  }
+
+  body.scrolled-3 #mesh-bg canvas {
+    filter: blur(12px) brightness(0.75);
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+<script>
+  const isDark = document.documentElement.classList.contains("dark");
+
+  /* Network-topology tuned Vanta settings */
+  VANTA.NET({
+    el: "#mesh-bg",
+    color: isDark ? 0x38bdf8 : 0x0ea5e9,      // cyan nodes/links
+    backgroundColor: isDark ? 0x0f172a : 0xf1f5f9, // deep slate vs light slate
+    points: 12.0,          // clearer, more meaningful nodes
+    maxDistance: 28.0,     // longer, topology-like links
+    spacing: 20.0,         // natural clustering
+    shininess: 40,         // subtle node glow
+    speed: 0.6,            // slow, signal-flow movement
+    mouseControls: true,
+    touchControls: false,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.0,
+    scaleMobile: 1.0
+  });
+
+  /* Scroll-based blur logic */
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    document.body.classList.remove("scrolled-1", "scrolled-2", "scrolled-3");
+
+    if (y > 80 && y <= 200) {
+      document.body.classList.add("scrolled-1");
+    } else if (y > 200 && y <= 400) {
+      document.body.classList.add("scrolled-2");
+    } else if (y > 400) {
+      document.body.classList.add("scrolled-3");
+    }
+  });
+
+  /* Add light/dark class for overlay control */
+  document.body.classList.add(isDark ? "dark" : "light");
+</script>
