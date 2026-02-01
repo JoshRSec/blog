@@ -20,7 +20,9 @@ headline = "Welcome to my corner of the digital world!"
 image = "img/me.jpg"
 bio = "I write about the things I’m building, learning, breaking and fixing across Computer Science and Cyber Security."
 links = [
-  { twitter = "https://twitter.com/Piv0tsec" },
+  { x-twitter = "https://twitter.com/Piv0tsec" },
   { linkedin = "https://www.linkedin.com/in/joshua-robbins-335152123/" },
-  { github = "https://github.com/JoshRSec" }
+  { github = "https://github.com/JoshRSec" },
+  { credly = "https://www.credly.com/users/joshua-robbins.34758ae2/badges" },
+  { tryhackme = "https://tryhackme.com/p/piv0t" }
 ]
