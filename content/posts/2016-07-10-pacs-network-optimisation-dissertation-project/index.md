@@ -89,7 +89,7 @@ The purpose of this project is to simulate and review different network topologi
 
 *Uw PACS Prototype Performance Measurements, Computer Model, and Simulation*
 
-**(Panwar, et al., 1990) **Discussed their early efforts on simulating different PACS network architectures by creating models with NS2. From their studies they identified parameters in their model which would prove useful for this project such as;
+**(Panwar, et al., 1990)** Discussed their early efforts on simulating different PACS network architectures by creating models with NS2. From their studies they identified parameters in their model which would prove useful for this project such as;
 
 - Image Acquisition Time: This is the time taken to receive and display an image packet. The time differs depending on the source (MRI, CT scanner) as the image may be larger or consist of many images.
 
@@ -104,7 +104,7 @@ Their research also discussed other parameters on their network such as traffic 
 
 *Performance Evaluation of a Picture Archiving and Communication Network Using Stochastic*
 
-**(Martinez, et al., 1990) **Investigates star networks but also takes a range of workloads into consideration for measuring performance, more specifically implementing fibre-optic as the link between nodes, See Fig. 3. For example.
+**(Martinez, et al., 1990)** Investigates star networks but also takes a range of workloads into consideration for measuring performance, more specifically implementing fibre-optic as the link between nodes, See Fig. 3. For example.
 
 ![An example of the star topology in a PACS environment](img/Figure-2.png)
 
@@ -118,7 +118,7 @@ It was concluded that the passive star topology responded well with scaling (up 
 
 *Picture Archiving and Communication System (PACS) Characteristic on Wired-line and Wireless Network for Traffic Simulation *
 
-**(Chimmanee & Patpituck, 2013) **Explores PACS traffic characteristics of wired and wireless networks. While wireless networks are out of the scope of this project, (Chimmanee & Patpituck, 2013) does introduce the parameter of packet loss in their simulations. Although it was found that wired networks did not experience packet-loss as prominently as wireless, it should be a parameter taken into consideration during the PACS Network Optimisation project as it is a factor experienced in a PACS network environment.
+**(Chimmanee & Patpituck, 2013)** Explores PACS traffic characteristics of wired and wireless networks. While wireless networks are out of the scope of this project, (Chimmanee & Patpituck, 2013) does introduce the parameter of packet loss in their simulations. Although it was found that wired networks did not experience packet-loss as prominently as wireless, it should be a parameter taken into consideration during the PACS Network Optimisation project as it is a factor experienced in a PACS network environment.
 
 Packet-loss was measured by distributing flows of data of packet sizes ranging from 54 bytes to 1518 bytes in flows of 1 to 6. The highest volume of packets were found to be in the range of 1024 to 1518 bytes, which accounted for 60% of data being transmitted. Second highest being packets within the range of 54 to 64 bytes with accounted for 30% of data being transmitted. The third highest was 512 to 1023 bytes which accounted for 9% of  data being transmitted and packets between 128 and 511 bytes accounted for the final 1%.
 
