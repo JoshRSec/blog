@@ -28,7 +28,7 @@
     background: none;
   }
 
-  /* Subtle grid overlay to enhance "network topology" feel */
+  /* Subtle grid overlay */
   #mesh-bg::before {
     content: "";
     position: absolute;
@@ -48,13 +48,13 @@
     animation: drift 60s linear infinite;
   }
 
-  /* Slow vertical drift for "large network" feel */
+  /* Slow vertical drift */
   @keyframes drift {
     from { transform: translateY(0px); }
     to   { transform: translateY(-40px); }
   }
 
-  /* Scroll-based blur stages */
+  /* Scroll-based blur */
   body.scrolled-1 #mesh-bg canvas {
     filter: blur(4px) brightness(0.95);
   }
@@ -66,6 +66,31 @@
   body.scrolled-3 #mesh-bg canvas {
     filter: blur(12px) brightness(0.75);
   }
+
+  /* ----------------------------------------------------------
+     MOBILE TUNING — calm, subtle, atmospheric
+  ---------------------------------------------------------- */
+  @media (max-width: 768px) {
+
+    #mesh-bg canvas {
+      filter: blur(6px) brightness(0.6) !important;
+      animation: drift-mobile 90s linear infinite !important;
+    }
+
+    @keyframes drift-mobile {
+      from { transform: translateY(0px); }
+      to   { transform: translateY(-20px); }
+    }
+
+    #mesh-bg::before {
+      opacity: 0.15;
+      background-size: 60px 60px;
+    }
+
+    #mesh-overlay {
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -73,20 +98,25 @@
 
 <script>
   const isDark = document.documentElement.classList.contains("dark");
+  const isMobile = window.innerWidth < 768;
 
-  /* Network-topology tuned Vanta settings */
+  /* Network-topology tuned Vanta settings with mobile adjustments */
   VANTA.NET({
     el: "#mesh-bg",
-    color: isDark ? 0x38bdf8 : 0x0ea5e9,      // cyan nodes/links
-    backgroundColor: isDark ? 0x0f172a : 0xf1f5f9, // deep slate vs light slate
-    points: 12.0,          // clearer, more meaningful nodes
-    maxDistance: 28.0,     // longer, topology-like links
-    spacing: 20.0,         // natural clustering
-    shininess: 40,         // subtle node glow
-    speed: 0.6,            // slow, signal-flow movement
-    mouseControls: true,
+    color: isDark ? 0x38bdf8 : 0x0ea5e9,
+    backgroundColor: isDark ? 0x0f172a : 0xf1f5f9,
+
+    /* Desktop vs mobile tuning */
+    points: isMobile ? 6.0 : 12.0,
+    maxDistance: isMobile ? 18.0 : 28.0,
+    spacing: isMobile ? 28.0 : 20.0,
+    shininess: isMobile ? 20 : 40,
+    speed: isMobile ? 0.3 : 0.6,
+
+    mouseControls: !isMobile,
     touchControls: false,
     gyroControls: false,
+
     minHeight: 200.00,
     minWidth: 200.00,
     scale: 1.0,

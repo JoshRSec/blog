@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<script>
+  // Force dark mode
+  document.documentElement.classList.add("dark");
+  document.documentElement.classList.remove("light");
+
+// Hide theme toggle buttons (desktop + mobile)
+document.addEventListener("DOMContentLoaded", () => {
+  const desktopToggle = document.getElementById("appearance-switcher");
+  const mobileToggle = document.getElementById("appearance-switcher-mobile");
+
+  if (desktopToggle) desktopToggle.style.display = "none";
+  if (mobileToggle) mobileToggle.style.display = "none";
+});
+
+</script>
+
+<!-- Render Blowfish's normal homepage content -->
+{{ partial "home/custom.html" . }}
+
+{{ end }}
