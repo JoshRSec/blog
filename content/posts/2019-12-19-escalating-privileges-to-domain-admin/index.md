@@ -19,9 +19,8 @@ This method may benefit from some social engineering but will require local Admi
 
 Should you need to obtain local Administrator privileges and you have access to a machine which isn't using Bit-locker, [here is a guide on doing so](https://blog.joshuarobbins.tech/?p=285) (It wont take long).
 
- 	* Create a new scheduled task
-
- 	Ensure the "Run with highest privileges" checkbox is checked
+- Create a new scheduled task
+- Ensure the "Run with highest privileges" checkbox is checked
 
 ![Creating a new Scheduled Task with Run as Highest Privileges ](img/TaskWithRunAsHighPriv.png)
  	Change the user in which the task will run as to that of the target DA account
@@ -30,7 +29,7 @@ Should you need to obtain local Administrator privileges and you have access to 
  	Set the trigger to be when the target DA logs onto the machine
 
 ![Creating the trigger for when the Domain Admin logs into the machine](img/CreatingAtLogonTask.png)
- 	* Set the action to run 'net.exe' -> add the parameter 'group "Domain Admins" user /add /domain'
+Set the action to run 'net.exe' -> add the parameter 'group "Domain Admins" user /add /domain'
 
 
 ![Defining the action for when the Domain Admin logs into the machine](img/CreatingAction.png)

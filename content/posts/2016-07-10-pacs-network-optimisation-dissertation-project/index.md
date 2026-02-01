@@ -12,13 +12,10 @@ categories:
 tags:
   - "Dissertation"
   - "Dissertation Project"
-  - "Joshua"
-  - "Joshua Robbins"
   - "PACS"
   - "PACS Network Opimisation"
   - "Picture archive Communication System"
   - "Project"
-  - "Robbins"
 ---
 
 # Abstract
@@ -29,38 +26,7 @@ Please note this paper has been adjusted to accommodate itself as a blog entry.
 # Acknowledgements
 
 I would like to thank Dr Massoud Zolgharni for continuous support throughout the project, offering insightful guidance and feedback during each stage of the projects development.
-# Table of Contents
 
-[1 Introduction.](#_Toc448402156)
-[2 Aims & Objectives.](#_Toc448402157)
-[2.1 Aims.](#_Toc448402158)
-[2.2 Objectives.](#_Toc448402159)
-[3 Review of academic literature.](#_Toc448402160)
-[4 Methodology.](#_Toc448402161)
-[4.1 Project Management.](#_Toc448402162)
-[4.1.1 Risk assessment chart.](#_Toc448402163)
-[4.2 Software Development.](#_Toc448402164)
-[4.3 Research methods.](#_Toc448402165)
-[4.4 Toolsets and Machine Environments.](#_Toc448402166)
-[4.4.1 Linux (Ubuntu 14.04 LTS).](#_Toc448402167)
-[4.4.2 Gawk.](#_Toc448402168)
-[4.4.3 Matlab.](#_Toc448402169)
-[4.4.4 NS2 (Network Simulator 2).](#_Toc448402170)
-[5 Design, Development and Evaluation.](#_Toc448402171)
-[5.1 Requirements collection and analysis.](#_Toc448402172)
-[5.2 Implementation/design.](#_Toc448402173)
-[5.2.1 Linux Implementation.](#_Toc448402174)
-[5.2.2 NS2 Implementation.](#_Toc448402175)
-[5.2.3 Gawk Implementation.](#_Toc448402176)
-[5.2.4 Matlab Implementation.](#_Toc448402177)
-[5.3 Evaluation.](#_Toc448402178)
-[5.3.1 Star network topology.](#_Toc448402179)
-[5.3.2 Ring network topology.](#_Toc448402180)
-[5.3.3 Mesh network topology.](#_Toc448402181)
-[6 Project Conclusion.](#_Toc44 8402182)
-[6.2. Further work.](#_Toc448402183)
-[6.3 Reflective Analysis](#_Toc448402184)
-[7 References.](#_Toc448402191)
 # 1. Introduction
 
 A Picture Archive Communication System (PACS) is a system which is comprised of medical imaging scanners (for example: CT or MRI scanner), storage mechanisms, information communication technologies, displays, and clinical workflow. A PACS network is the combination of PACS systems and nodes (computers) accessing storage of images. At any time, image files (often many) can be requested for viewing or being saved to storage mechanisms.
@@ -84,37 +50,37 @@ The goal of this project is to simulate different topologies in a PACS environme
 ## 2.1 Aims
 
 
- 	* Investigate common PACS network implantations to get an understanding of the different ways they are implemented.
+- Investigate common PACS network implantations to get an understanding of the different ways they are implemented.
 
- 	* Design and implement different topologies for the PACS network environment.
+- Design and implement different topologies for the PACS network environment.
 
- 	* Retrieve meaningful data from the simulations developed.
+- Retrieve meaningful data from the simulations developed.
 
- 	* Statistically analyse the data retrieved from the simulations through graphs and computation of the data.
+- Statistically analyse the data retrieved from the simulations through graphs and computation of the data.
 
- 	* From the statistical analysis, find an optimal network for PACS.
+- From the statistical analysis, find an optimal network for PACS.
 
 
 ## 2.2 Objectives
 
 
- 	* Design and develop a simple PACS network simulation.
+- Design and develop a simple PACS network simulation.
 
- 	* Design and develop simulations of different topologies.
+- Design and develop simulations of different topologies.
 
- 	* Apply different throughput allowances for each topology.
+- Apply different throughput allowances for each topology.
 
- 	* Develop a way of retrieving meaningful data from simulations for analysis.
+- Develop a way of retrieving meaningful data from simulations for analysis.
 
- 	* Develop a way to compute data outputted and display results in a meaningful way.
+- Develop a way to compute data outputted and display results in a meaningful way.
 
- 	* Compare and contrast implementation of different topologies from the results obtained from the simulations.
+- Compare and contrast implementation of different topologies from the results obtained from the simulations.
 
- 	* Find an optimised PACS network.
+- Find an optimised PACS network.
 
- 	* Summarise the results of the project.
+- Summarise the results of the project.
 
- 	* Perform a critical evaluation of the project.
+- Perform a critical evaluation of the project.
 
 
 # 3. Review of academic literature
@@ -125,13 +91,13 @@ The purpose of this project is to simulate and review different network topologi
 
 **(Panwar, et al., 1990) **Discussed their early efforts on simulating different PACS network architectures by creating models with NS2. From their studies they identified parameters in their model which would prove useful for this project such as;
 
- 	* Image Acquisition Time: This is the time taken to receive and display an image packet. The time differs depending on the source (MRI, CT scanner) as the image may be larger or consist of many images.
+- Image Acquisition Time: This is the time taken to receive and display an image packet. The time differs depending on the source (MRI, CT scanner) as the image may be larger or consist of many images.
 
- 	* Local Disk Access Time: This is the read/write time for a packet on the local machine (workstation). Although the transfer rate was 0.25Mbyte/s, the rates have increased drastically in modern advances.
+- Local Disk Access Time: This is the read/write time for a packet on the local machine (workstation). Although the transfer rate was 0.25Mbyte/s, the rates have increased drastically in modern advances.
 
- 	* Compression/ Decompression time: This is the time taken to compress or decompress image packets. This depends on the compression technique used, for example: JPG.
+- Compression/ Decompression time: This is the time taken to compress or decompress image packets. This depends on the compression technique used, for example: JPG.
 
- 	* Transmission Time: This is the time taken to transmit a packet between 2 nodes and is the result of a link between 2 nodes. This link could be a CAT5 cable or fibre optic cable.
+- Transmission Time: This is the time taken to transmit a packet between 2 nodes and is the result of a link between 2 nodes. This link could be a CAT5 cable or fibre optic cable.
 
 
 Their research also discussed other parameters on their network such as traffic distributed from modularities on the network and the amount of images/packets in which these machines transmit. They were also able to discover bottlenecks with scaling up their own network (implementing a star topology), although the most considerable limitation discovered was the compression and decompression time of their hardware.  Transmission time was found to not be a bottleneck in their research. The parameters mentioned can still be applied to more modern networks, however, as technology has been advanced over time (more optimised compression techniques and hardware), the bottlenecks they have found may not be a bottleneck in more recent PACS networks.
@@ -171,60 +137,37 @@ The PACS network optimisation project is based upon software development. Initia
 The project is to be approached in a sequential manner, and such, the Waterfall methodology would prove beneficial. The use of milestones alongside Waterfall would be advantageous to mark significant points along the project’s timeline. These points may include design of the PACS topologies, successful implementation of network simulation, meaningful data extracted from implementation or learning new Toolsets and Machine Environments. By implementation of milestones, the progress of project can be reviewed, ensuring success of the projects aims.
 ### 4.1.1 Risk assessment chart
 
+### Risk Assessment
 
+#### R1. Loss of data
+- **Likelihood:** Low  
+- **Impact:** High  
+- **Mitigation:** Perform regular backups on external storage after each work session.
 
+#### R2. Time taken away due to external commitments
+- **Likelihood:** Medium  
+- **Impact:** Medium  
+- **Mitigation:** Allocate time effectively and follow the Gantt chart to complete weekly tasks.
 
-Risk No.
-Risk
-Likelihood
-Impact on Project
-Risk Mitigation
+#### R3. Ineffective implementation of simulations in NS2
+- **Likelihood:** Low  
+- **Impact:** High  
+- **Mitigation:** Read NS2 documentation and research how to implement required features.
 
+#### R4. Difficulty using new toolsets or machine environments
+- **Likelihood:** Medium  
+- **Impact:** Medium  
+- **Mitigation:** Research the toolsets/environments to be used and allow time for learning.
 
-R1.
-Loss of data
-Low
-High
-Perform regular back-ups on external mediums of work files after each session of working
+#### R5. Not achieving project milestones within the Gantt chart timescale
+- **Likelihood:** Medium  
+- **Impact:** High  
+- **Mitigation:** Review progress at each milestone to prevent delays and maintain project success.
 
-
-R2.
-Taking time out of the project for external commitments
-Medium
-Medium
-Allocate time effectively and follow Gantt chart to complete allocated tasks for each week
-
-
-R3.
-Implementing simulations ineffectively in NS2
-Low
-High
-Read documentation on NS2 and research how to implement features of NS2
-
-
-R4.
-Difficulty using new toolsets/machine environments
-Medium
-Medium
-Research into toolsets/machine environment’s which are to be implemented and allow time for required learning.
-
-
-R5.
-
-&nbsp;
-Not achieving project milestones to timescale defined on the Gantt chart
-Medium
-High
-Reviewing progress of each milestone will prevent the project falling behind schedule and ensure success
-
-
-R6.
-Unsuitable data for statistical analysis
-Low
-High
-Review progress at each milestone regularly to ensure the project is still working towards the initial aims defined
-
-
+#### R6. Unsuitable data for statistical analysis
+- **Likelihood:** Low  
+- **Impact:** High  
+- **Mitigation:** Review progress regularly at each milestone to ensure alignment with initial project aims.
 
 ## 4.2 Software Development
 
@@ -298,17 +241,17 @@ Before work could begin on the PACS network, it was important to address R3 from
 
 The steps in which the creation of a Tcl script to simulate a network are:
 
- 	* Topology definition: definition of the relationships between nodes.
+- Topology definition: definition of the relationships between nodes.
 
- 	* Model development: models are added to simulation.
+- Model development: models are added to simulation.
 
- 	* Node and link configuration: models set their default values (for example, the size of packets sent by an application or bandwidth of a link between nodes).
+- Node and link configuration: models set their default values (for example, the size of packets sent by an application or bandwidth of a link between nodes).
 
- 	* Execution: network is simulated and events are run, data requested is logged.
+- Execution: network is simulated and events are run, data requested is logged.
 
- 	* Performance analysis: once the simulation is completed and data is available as a time-stamped event trace.
+- Performance analysis: once the simulation is completed and data is available as a time-stamped event trace.
 
- 	* Graphical Visualisation: Visualisation of the simulation is achieved through the event trace file.
+- Graphical Visualisation: Visualisation of the simulation is achieved through the event trace file.
 
 
 **Observing Packets being dropped**
@@ -324,7 +267,7 @@ At this point it was important to understand the structure of the trace file cre
 After reading the NS2 documentation on trace files, it was concluded that the format of the data in the trace files being created are as shown in Table 1.
 
 
-
+```
 Event type
 time
 from
@@ -337,7 +280,7 @@ src
 dst
 Sequence number of packet
 Packet id
-
+```
 
 
 Table 1: The format of data in the trace file
@@ -470,11 +413,11 @@ As the project was conducted on a strict timescale some features were unable to 
 
 Other possibilities include:
 
- 	* Application of network protocols found especially within PACS to simulate a more realistic PACS network.
+- Application of network protocols found especially within PACS to simulate a more realistic PACS network.
 
- 	* Testing of varied packet sizes to produce a median and standard deviation of throughput during statistical analysis.
+- Testing of varied packet sizes to produce a median and standard deviation of throughput during statistical analysis.
 
- 	* As discussed in conclusion of section 6, a hybrid network, combining characteristics of the popular star topology with the resilience of the mesh topology could be further investigated and researched as a potential solution.
+- As discussed in conclusion of section 6, a hybrid network, combining characteristics of the popular star topology with the resilience of the mesh topology could be further investigated and researched as a potential solution.
 
 
 # 6.3 Reflective Analysis

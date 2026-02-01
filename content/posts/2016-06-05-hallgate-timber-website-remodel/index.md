@@ -11,8 +11,6 @@ categories:
 tags:
   - "Hallgate"
   - "Hallgate-Timber Website"
-  - "Joshua"
-  - "Robbins"
   - "Timber"
   - "Website"
 ---

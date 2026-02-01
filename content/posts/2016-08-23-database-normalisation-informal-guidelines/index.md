@@ -21,51 +21,14 @@ tags:
   - "diagram"
   - "foreign key"
   - "informal guidelines"
-  - "Joshua"
-  - "Joshua Robbins"
   - "normalisation"
   - "primary key"
-  - "relationship"
-  - "Robbins"
   - "schema"
   - "SQL"
   - "UNF"
 ---
 
 Database Normalisation and informal design guidelines follows on from "[Database planning of modules and mechanisms](https://www.joshuarobbins.tech/database-planning-modules-mechanisms)", this time I am required to apply Normalisation upon my database design, discuss the Four informal design guidelines that may be used as measures to determine the quality of relation schema design as well as show sample SQL statements.
-# Table of Contents
-
-
- 	[The Four informal design guidelines that may be used as measures to determine the quality of relation schema design](#_Toc408748166)
-
- 	* [Guideline 1: Each record in a relation should represent one entity or relationship instance](#_Toc408748167)
-
- 	* [Guideline 2: No insertion, deletion, or modification anomalies are present in the relations](#_Toc408748168)
-
- 	* [Guideline 3: Relations should be designed such that their records will have as few NULL values as possible](#_Toc408748169)
-
- 	* [Guideline 4: Design relation schemas so that they can be joined with equality conditions on attributes that are either primary keys or foreign keys in a way that guarantees that no spurious records are generated](#_Toc408748170)
-
-
-
- 	* [Key attributes for Renting Vehicle relation and its functional dependencies](#_Toc408748171)
-
- 	[The normalisation process for the RentingVehicle relation](#_Toc408748172)
-
- 	* [Un-Normalised Form – UNF](#_Toc408748173)
-
- 	* [First Normal Form - 1NF](#_Toc408748174)
-
- 	* [Second Normal Form - 2NF](#_Toc408748175)
-
- 	* [Third Normal Form - 3NF](#_Toc408748176)
-
-
-
- 	* [SQL statements for defining the database solution](#_Toc408748177)
-
- 	* [SQL statements for manipulating the database](#_Toc408748178)
-
 
 ## The Four informal design guidelines that may be used as measures to determine the quality of relation schema design
 
@@ -97,41 +60,29 @@ RentingVehicle: {Customer-Firstname, Customer-Lastname, Customer-Email, RentDate
 
 Candidate keys:
 
- 	* {VehicleRegistration-No}
-
- 	* {Customer-Email}
-
- 	* {RentDate, VehicleRegistration-No}
-
- 	* {RentDate, VehicleRegistration-No, Customer-Email}
+- {VehicleRegistration-No}
+- {Customer-Email}
+- {RentDate, VehicleRegistration-No}
+- {RentDate, VehicleRegistration-No, Customer-Email}
 
 
 Primary key:
-
- 	* {RentDate, VehicleRegistration-No, Customer-Email}
+- {RentDate, VehicleRegistration-No, Customer-Email}
 
 
 Prime attributes:
-
- 	* {RentDate, VehicleRegistration-No, Customer-Email}
-
+- {RentDate, VehicleRegistration-No, Customer-Email}
 
 Non-prime attributes:
-
- 	* {Customer-Firstname, Customer-Lastname, Authorised-by, Vehicle-Model, Vehicle-Colour, Vehicle-Type, Discount, Renting-Price, Pickup-Location, Drop-off-Location, Pickup-Date/time, Drop-off-Date/time}
+- {Customer-Firstname, Customer-Lastname, Authorised-by, Vehicle-Model, Vehicle-Colour, Vehicle-Type, Discount, Renting-Price, Pickup-Location, Drop-off-Location, Pickup-Date/time, Drop-off-Date/time}
 
 
 Functional dependencies:
-
- 	* {VehicleRegistration-No -> Vehicle-Model}
-
- 	* {VehicleRegistration-No -> Vehicle-Colour}
-
- 	* {VehicleRegistration-No -> Vehicle-Type}
-
- 	* {Customer-Email -> Customer-Firstname}
-
- 	* {Customer-Email -> Customer-Lastname}
+- {VehicleRegistration-No -> Vehicle-Model}
+- {VehicleRegistration-No -> Vehicle-Colour}
+- {VehicleRegistration-No -> Vehicle-Type}
+- {Customer-Email -> Customer-Firstname}
+- {Customer-Email -> Customer-Lastname}
 
 
 ## The normalisation process for the RentingVehicle relation
@@ -168,40 +119,31 @@ By applying 3NF, 2 new tables have been created Drop-off and Pickup, these have 
 ## SQL statements for defining the database solution
 
 Below are the SQL statements for defining the database solution
-
- 	* Create “Lincoln Vehicle Rent" database.
-
-
-CREATE SCHEMA LincolnVehicleRent AUTHORIZATION A1;
-
- 	* Create your 2 tables from your design, including data types, integrity constrains of relationships between tables; with enforcing integrity on each relationships.
+- Create “Lincoln Vehicle Rent" database.
+  - `CREATE SCHEMA LincolnVehicleRent AUTHORIZATION A1;`
+- Create your 2 tables from your design, including data types, integrity constrains of relationships between tables; with enforcing integrity on each relationships.
 
 
 ![SQL statement for creating two tables from my design, including datatypes ](img/image8.png)
 
- 	* Change the definition of one of your tables by adding at least one attribute constraint and one table constraint.
-
+- Change the definition of one of your tables by adding at least one attribute constraint and one table constraint.
 
 ![SQL statement for changing the definition of one of the tables](img/image9.png)
 
- 	* Granting account A1 the privilege to insert and delete tuples in vehicle relation with the ability to propagate these privileges to additional accounts
-
+- Granting account A1 the privilege to insert and delete tuples in vehicle relation with the ability to propagate these privileges to additional accounts
 
 ![SQL statement for creating an account ](img/image10.png)
 
- 	* Revoking account A1 the privilege granted to insert tuples in customer relation.
-
+- Revoking account A1 the privilege granted to insert tuples in customer relation.
 
 ![SQL statement for revoking permissions on account ](img/image11-0.png)
 ## SQL statements for manipulating the database
 
 
- 	* Inserting a valid record for the customer table; deleting records for the customer table; editing records in the customer table
-
+- Inserting a valid record for the customer table; deleting records for the customer table; editing records in the customer table
 
 ![SQL statement for Inserting a valid record for the customer table; deleting records for the customer table; editing records in the customer table](img/image11.png)
 
- 	* List of the most favourite vehicle-make for customers.
-
+- List of the most favourite vehicle-make for customers.
 
 ![SQL statement for listing the most favourite vehicle-make for customers](img/image12.png)

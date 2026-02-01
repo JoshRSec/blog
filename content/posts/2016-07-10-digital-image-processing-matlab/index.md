@@ -43,7 +43,6 @@ The median filter removed most of the noise on the images except image ‘4.jpg�
 
 ![Matlab - (a) Image 4.jpg before median and Gaussian filter (b) after median and Gaussian filter](img/image1.png)
 
-&nbsp;
 # Task 2
 
 To segment the lungs region from the image after removing the noise, the image had to be converted to a binary image, this was achieved by comparing each value in the image to a threshold, depending on the images’ value it a value of 1 or 0 is assigned to a new matrix the size of the inputted image, which after all the values have been compared and assigned a 1 or a 0 is the new outputted image.
@@ -81,7 +80,6 @@ To display a green circle around the identified circles the function “viscircl
 
 ![Matlab - (e) shows '4.jpg' with detected circles highlighted (f) shows number of circles highlighted displayed in Matlab console](img/image3.png)
 
-&nbsp;
 # References
 
 Ioannou, D., Huda, W. & Laine, A., 1999. Circle recognition through a 2D Hough Transform and radius histogramming. *Image and Vision Computing, *Volume 17, pp. 15-28.
