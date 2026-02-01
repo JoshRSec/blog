@@ -6,4 +6,4 @@ showHero: true
 heroStyle: "background"
 ---
 
-Welcome to my corner of the internet. I write about the things I’m building, learning, breaking and fixing across Computer Science and Cyber Security.
+I write about the things I’m building, learning, breaking and fixing across Computer Science and Cyber Security.
