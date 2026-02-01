@@ -65,7 +65,7 @@ This site is deployed using GitHub Pages with a custom subdomain.
 
 Create a **CNAME** record:
 
-'blog  →  JoshRSec.github.io'
+`blog  →  JoshRSec.github.io`
 
 ## GitHub Pages Settings
 
