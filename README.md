@@ -22,7 +22,7 @@ I write about automation, scripting, cybersecurity, web aesthetics, and the micr
 
 This repo follows the standard Hugo layout:
 
-.
+```
 ├── archetypes/        # Content templates
 ├── assets/            # Custom CSS, JS, and pipeline assets
 ├── content/           # Blog posts, pages, and sections
@@ -31,6 +31,7 @@ This repo follows the standard Hugo layout:
 ├── static/            # Images, icons, and static files
 ├── themes/            # Blowfish theme (submodule or local copy)
 └── config/_default/   # Site configuration
+```
 
 Customizations live primarily in:
 
