@@ -1,11 +1,20 @@
 ---
 title: "Mobile Friendly Website Design - Hallgate Timber"
 date: 2019-10-09
+summary: "A follow‑up web‑development project that rebuilds the Hallgate Timber website to meet new requirements, including a dynamic navigation menu, an embedded contact form with improved handling and security, an SEO overhaul, and full mobile‑friendly responsiveness. The redesign focuses on smoother user journeys, better accessibility for staff handling enquiries, and modern responsive design practices to support the growing number of mobile visitors."
+description: "A follow‑up web‑development project that rebuilds the Hallgate Timber website to meet new requirements, including a dynamic navigation menu, an embedded contact form with improved handling and security, an SEO overhaul, and full mobile‑friendly responsiveness. The redesign focuses on smoother user journeys, better accessibility for staff handling enquiries, and modern responsive design practices to support the growing number of mobile visitors."
 slug: "mobile-friendly-website-design-hallgate"
 aliases:
   - "/mobile-friendly-website-design-hallgate"
 categories:
-  - "System.Xml.XmlElement"
+  - "Web Design"
+tags:
+  - "Hallgate"
+  - "Hallgate-Timber Website"
+  - "Joshua"
+  - "Robbins"
+  - "Timber"
+  - "Website"
 ---
 
 This project is a follow up from my previous post "[Hallgate Timber Website Remodel](https://blog.joshuarobbins.tech/hallgate-timber-website-remodel)". Whilst my previous website design met the criteria put forward to myself, requirements had changed and to accommodate the changing criteria another website overhaul was needed. A number of new requirements included; Dynamic menu, Website contact form, SEO overhaul and most importantly the website needed to be Mobile friendly.

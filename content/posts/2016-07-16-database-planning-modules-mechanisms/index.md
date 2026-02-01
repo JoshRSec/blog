@@ -1,11 +1,14 @@
 ---
 title: "Database planning of modules and mechanisms"
 date: 2016-07-16
+summary: "A full database‑design project for Lincoln Vehicle Rent, covering requirement analysis, functional specifications, DFDs, an ER model, and the mapping of that model into a relational schema. It defines the key entities—customers, staff, vehicles, reservations, rentals, and feedback—and shows how they interact to support vehicle availability, rental processing, inspections, restrictions, and customer feedback within a complete, normalised database structure."
+description: "A full database‑design project for Lincoln Vehicle Rent, covering requirement analysis, functional specifications, DFDs, an ER model, and the mapping of that model into a relational schema. It defines the key entities—customers, staff, vehicles, reservations, rentals, and feedback—and shows how they interact to support vehicle availability, rental processing, inspections, restrictions, and customer feedback within a complete, normalised database structure."
 slug: "database-planning-modules-mechanisms"
 aliases:
   - "/database-planning-modules-mechanisms"
 categories:
-  - "System.Xml.XmlElement"
+  - "Coursework"
+  - "Database Design"
 tags:
   - "Context Level DFD"
   - "data"

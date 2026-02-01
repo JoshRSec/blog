@@ -1,6 +1,8 @@
 ---
 title: "Gaining entry into Windows as Administrator"
 date: 2019-12-18
+summary: "A high‑level look at how physical access to a non‑BitLocker‑protected Windows machine can allow someone to trigger a system‑level command prompt at the login screen and reset the local Administrator account, highlighting why full‑disk encryption is essential for preventing this risk."
+description: "A high‑level look at how physical access to a non‑BitLocker‑protected Windows machine can allow someone to trigger a system‑level command prompt at the login screen and reset the local Administrator account, highlighting why full‑disk encryption is essential for preventing this risk."
 slug: "gaining-entry-into-windows-with-administrative-permissions"
 aliases:
   - "/gaining-entry-into-windows-with-administrative-permissions"

@@ -1,6 +1,8 @@
 ---
 title: "Searching multiple Word documents for keyword"
 date: 2020-01-29
+summary: "Found myself in a situation I needed to search 20+ documents for a keyword and unfortunately Word cannot search files within a directory for keywords, only the current document"
+description: "Found myself in a situation I needed to search 20+ documents for a keyword and unfortunately Word cannot search files within a directory for keywords, only the current document"
 slug: "searching-multiple-word-documents-for-keyword"
 aliases:
   - "/searching-multiple-word-documents-for-keyword"

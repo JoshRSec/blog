@@ -1,11 +1,13 @@
 ---
 title: "Hallgate Timber Website Remodel"
 date: 2016-06-05
+summary: "A website remodel project for Hallgate Timber focused on improving structure, navigation, and accessibility. The original site lacked a coherent design and relied heavily on outdated HTML tables, making content difficult to find. The redesign introduces cleaner CSS styling, a shallower site hierarchy, and modern DIV‑based layouts to improve usability, accessibility, and maintainability while preserving the site’s core functionality."
+description: "A website remodel project for Hallgate Timber focused on improving structure, navigation, and accessibility. The original site lacked a coherent design and relied heavily on outdated HTML tables, making content difficult to find. The redesign introduces cleaner CSS styling, a shallower site hierarchy, and modern DIV‑based layouts to improve usability, accessibility, and maintainability while preserving the site’s core functionality."
 slug: "hallgate-timber-website-remodel"
 aliases:
   - "/hallgate-timber-website-remodel"
 categories:
-  - "System.Xml.XmlElement"
+  - "Web Design"
 tags:
   - "Hallgate"
   - "Hallgate-Timber Website"

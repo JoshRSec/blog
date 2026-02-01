@@ -1,6 +1,8 @@
 ---
 title: "Connecting to Windows Internal Database (WID)"
 date: 2019-10-25
+summary: "A short guide on connecting to the Windows Internal Database by installing SSMS, running it as Administrator, and using the appropriate named‑pipe connection string for your Windows version so you can manage WID with standard SQL Server tools."
+description: "A short guide on connecting to the Windows Internal Database by installing SSMS, running it as Administrator, and using the appropriate named‑pipe connection string for your Windows version so you can manage WID with standard SQL Server tools."
 slug: "connecting-to-windows-internal-database-wid"
 aliases:
   - "/connecting-to-windows-internal-database-wid"
@@ -28,7 +30,5 @@ Steps to connect to WID:
  	* Windows 2003 - Windows 2008: \\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query
 
  	* Windows 2012 onward: \\.\pipe\MICROSOFT##WID\tsql\query
-
-
 
  	* Connect using Windows Authentication

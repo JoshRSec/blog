@@ -1,6 +1,8 @@
 ---
 title: "Automating Log File Archiving - PowerShell"
 date: 2019-10-10
+summary: "A PowerShell utility that automates log maintenance by compressing log files, optionally deleting the originals, and supporting both per‑file and per‑day grouping. It’s a practical way to reclaim disk space on busy servers, especially when dealing with large or noisy log directories."
+description: "A PowerShell utility that automates log maintenance by compressing log files, optionally deleting the originals, and supporting both per‑file and per‑day grouping. It’s a practical way to reclaim disk space on busy servers, especially when dealing with large or noisy log directories."
 slug: "automating-log-file-archiving-powershell"
 aliases:
   - "/automating-log-file-archiving-powershell"

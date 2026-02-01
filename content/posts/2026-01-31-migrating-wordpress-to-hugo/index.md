@@ -1,12 +1,13 @@
 ---
 title: "Migrating from Wordpress to Hugo"
 date: 2026-01-31
+summary: "A clean, static rebuild of my blog using Hugo replaced the security risks, plugin bloat, and performance issues of WordPress with a fast, version‑controlled, fully automated setup; by building a custom migration pipeline to convert messy WordPress XML into structured Hugo content bundles—with local images, cleaned HTML, converted links, and consistent front matter—I ended up with a secure, future‑proof site that’s easier to maintain and far faster than anything I could achieve on WordPress."
+description: "A clean, static rebuild of my blog using Hugo replaced the security risks, plugin bloat, and performance issues of WordPress with a fast, version‑controlled, fully automated setup; by building a custom migration pipeline to convert messy WordPress XML into structured Hugo content bundles—with local images, cleaned HTML, converted links, and consistent front matter—I ended up with a secure, future‑proof site that’s easier to maintain and far faster than anything I could achieve on WordPress."
 slug: "migrating-wordpress-to-hugo"
 aliases:
   - "/migrating-wordpress-to-hugo"
 categories:
-  - "Wordpress"
-  - "Hugo"
+  - "Web Design"
 tags:
   - "Wordpress"
   - "Hugo"

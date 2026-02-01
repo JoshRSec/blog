@@ -2,10 +2,13 @@
 title: "PACS Network Optimisation - Dissertation Project"
 date: 2016-07-10
 slug: "pacs-network-optimisation-dissertation-project"
+summary: "A project that simulates PACS network topologies using NS2 to evaluate performance under increasing traffic loads. Packet‑loss data is extracted, analysed, and visualised to compare designs. Results show the mesh topology performs best under heavy throughput, though combining topologies warrants further study."
+description: "A project that simulates PACS network topologies using NS2 to evaluate performance under increasing traffic loads. Packet‑loss data is extracted, analysed, and visualised to compare designs. Results show the mesh topology performs best under heavy throughput, though combining topologies warrants further study."
 aliases:
   - "/pacs-network-optimisation-dissertation-project"
 categories:
-  - "System.Xml.XmlElement"
+  - "Dissertation"
+  - "Coursework"
 tags:
   - "Dissertation"
   - "Dissertation Project"
@@ -21,10 +24,8 @@ tags:
 # Abstract
 
 This project aims to address PACS network optimisation, as it is being increased in clinical use. More data is being transmitted across PACS network environments which may include patient records or patients’ medical images. Without optimisation the network may suffer performance issues.  This project plans to design and implement different topologies for the PACS network through simulations created using NS2. From the simulations produced within NS2, meaningful data is extracted from the trace files which is then statistically analysed though graphs and computation of the data to discover an optimised network. The resulting graphs depict packet loss through the testing of incrementing packet throughput rates. The outcome of this analysis is the Mesh topology, which proves to be the most resilient topology. However, further research into combining topologies should be conducted.
-Please note this paper has been adjusted to accommodate itself as a blog entry, you can view the original file here:
+Please note this paper has been adjusted to accommodate itself as a blog entry.
 
-![PDF icon for Original PACS Network Opimisation Paper](img/pdf-icon-copy-min.png)
-&nbsp;
 # Acknowledgements
 
 I would like to thank Dr Massoud Zolgharni for continuous support throughout the project, offering insightful guidance and feedback during each stage of the projects development.

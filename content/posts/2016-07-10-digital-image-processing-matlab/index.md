@@ -1,11 +1,14 @@
 ---
 title: "Digital Image Processing - Matlab"
 date: 2016-07-10
+summary: "A MATLAB pipeline that denoises lung X‑ray images (median and Gaussian filtering), segments the lung region via thresholding, morphological opening, and connected components, then detects and counts circular lesions—including partial ones—using the circular Hough transform (imfindcircles). Detected circles are overlaid with green boundaries, and the total count is printed to the Command Window."
+description: "A MATLAB pipeline that denoises lung X‑ray images (median and Gaussian filtering), segments the lung region via thresholding, morphological opening, and connected components, then detects and counts circular lesions—including partial ones—using the circular Hough transform (imfindcircles). Detected circles are overlaid with green boundaries, and the total count is printed to the Command Window."
 slug: "digital-image-processing-matlab"
 aliases:
   - "/digital-image-processing-matlab"
 categories:
-  - "System.Xml.XmlElement"
+  - "Coursework"
+  - "Image Processing"
 tags:
   - "Image"
   - "Image Processing"

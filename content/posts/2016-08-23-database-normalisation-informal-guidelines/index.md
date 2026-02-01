@@ -1,11 +1,14 @@
 ---
 title: "Database normalisation and informal guidelines"
 date: 2016-08-23
+summary: "A coursework project demonstrating the application of database normalisation—from UNF through 1NF, 2NF, and 3NF—using a vehicle‑rental scenario. It explains the four informal design guidelines for evaluating relation quality, identifies keys and functional dependencies, shows the step‑by‑step decomposition of the RentingVehicle relation, and provides example SQL statements for defining, modifying, and manipulating the resulting database schema."
+description: "A coursework project demonstrating the application of database normalisation—from UNF through 1NF, 2NF, and 3NF—using a vehicle‑rental scenario. It explains the four informal design guidelines for evaluating relation quality, identifies keys and functional dependencies, shows the step‑by‑step decomposition of the RentingVehicle relation, and provides example SQL statements for defining, modifying, and manipulating the resulting database schema."
 slug: "database-normalisation-informal-guidelines"
 aliases:
   - "/database-normalisation-informal-guidelines"
 categories:
-  - "System.Xml.XmlElement"
+  - "Coursework"
+  - "Database Design"
 tags:
   - "1NF"
   - "2NF"
@@ -29,7 +32,7 @@ tags:
   - "UNF"
 ---
 
-Database Normalisation and informal design guidelines follows on from "[Database planning of modules and mechanisms](https://blog.joshuarobbins.tech/database-planning-modules-mechanisms)", this time I am required to apply Normalisation upon my database design, discuss the Four informal design guidelines that may be used as measures to determine the quality of relation schema design as well as show sample SQL statements.
+Database Normalisation and informal design guidelines follows on from "[Database planning of modules and mechanisms](https://www.joshuarobbins.tech/database-planning-modules-mechanisms)", this time I am required to apply Normalisation upon my database design, discuss the Four informal design guidelines that may be used as measures to determine the quality of relation schema design as well as show sample SQL statements.
 # Table of Contents
 
 

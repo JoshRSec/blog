@@ -2,6 +2,8 @@
 title: "Finding pwned emails with HIBP and Powershell"
 date: 2019-11-22
 slug: "finding-pwned-emails-with-hibp-and-powershell"
+summary: "A small PowerShell project that reads email addresses from a file and checks them against the Have I Been Pwned API, generating CSV reports showing any breaches or public pastes associated with those accounts."
+description: "A small PowerShell project that reads email addresses from a file and checks them against the Have I Been Pwned API, generating CSV reports showing any breaches or public pastes associated with those accounts."
 aliases:
   - "/finding-pwned-emails-with-hibp-and-powershell"
 categories:

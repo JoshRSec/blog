@@ -1,6 +1,8 @@
 ---
 title: "Running TOR on Kali | The proper way"
 date: 2019-11-29
+summary: "A short guide on running the Tor Browser safely by creating a non‑root user and launching Tor under that account, ensuring it never runs with elevated privileges."
+description: "A short guide on running the Tor Browser safely by creating a non‑root user and launching Tor under that account, ensuring it never runs with elevated privileges."
 slug: "running-tor-on-kali-the-proper-way"
 aliases:
   - "/running-tor-on-kali-the-proper-way"

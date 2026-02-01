@@ -1,6 +1,8 @@
 ---
 title: "IIS Server Header Hardening"
 date: 2019-11-30
+summary: "A short guide on removing or rewriting IIS and HTTP.SYS server headers to reduce information exposure in HTTP responses, using either a registry change for HTTPAPI or URL Rewrite rules in IIS to control what the Server header reveals."
+description: "A short guide on removing or rewriting IIS and HTTP.SYS server headers to reduce information exposure in HTTP responses, using either a registry change for HTTPAPI or URL Rewrite rules in IIS to control what the Server header reveals."
 slug: "iis-server-header-hardening"
 aliases:
   - "/iis-server-header-hardening"
@@ -29,17 +31,11 @@ If you are seeing the Server header **Microsoft-HTTPAPI/2.0** then the header is
 
  	* *net start http*
 
-
-
  	While in CMD restart IIS with:
 
  	* *iisreset* 
 
-
-
-
 ## **Microsoft-IIS/x.x**
-
 
  	* Install URL Rewrite on the IIS server. [http://www.iis.net/downloads/microsoft/url-rewrite](http://www.iis.net/downloads/microsoft/url-rewrite)
 
@@ -47,28 +43,21 @@ If you are seeing the Server header **Microsoft-HTTPAPI/2.0** then the header is
 
  	* Select the site in particular when using URL Rewrite or select the IIS server to apply the changes globally
 
-
-
-
 ![The location of URL Rewrite within IIS](img/1-300x102.png)
 
  	* Click on the **View Server Variables **in the Actions pane in the right hand side
-
 
 ![Viewing the Server Variables within IIS](img/2.png)
 
  	* Click on the Add button
 
-
 ![Adding Server Variables within IIS](img/3.png)
 
  	* Enter **RESPONSE_SERVER **in the textbox provided
 
-
 ![Adding Server Variables within IIS](img/4-300x131.png)
 
  	* Click **View Rules, **then add a new Outbound rule
-
 
 ![Selecting Outbound rule within IIS](img/5-300x203.png)
 
@@ -81,9 +70,6 @@ If you are seeing the Server header **Microsoft-HTTPAPI/2.0** then the header is
  	* Enter the pattern **.+**
 
  	* ***Optionally** *you can define the returned header in the **Action Properties -> Value** text box
-
-
-
 
 ![Defining the outbound rule within IIS](img/6-1024x398.png)
 ## Final Thoughts

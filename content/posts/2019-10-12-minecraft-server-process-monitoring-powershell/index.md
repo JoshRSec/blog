@@ -1,6 +1,8 @@
 ---
 title: "Minecraft Server Process Monitoring - PowerShell"
 date: 2019-10-12
+summary: "A PowerShell script designed to monitor and automatically restart a Minecraft server on Windows by checking for the Java process every few seconds, logging start/stop events, and providing persistence through scheduled tasks. The setup can be extended with custom server flags, external monitoring tools, and optional MySQL integration for deeper analysis of uptime and restart behaviour."
+description: "A PowerShell script designed to monitor and automatically restart a Minecraft server on Windows by checking for the Java process every few seconds, logging start/stop events, and providing persistence through scheduled tasks. The setup can be extended with custom server flags, external monitoring tools, and optional MySQL integration for deeper analysis of uptime and restart behaviour."
 slug: "minecraft-server-process-monitoring-powershell"
 aliases:
   - "/minecraft-server-process-monitoring-powershell"

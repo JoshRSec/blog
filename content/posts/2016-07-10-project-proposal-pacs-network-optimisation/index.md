@@ -1,11 +1,14 @@
 ---
 title: "PACS Network Optimisation - Project Proposal"
 date: 2016-07-10
+summary: "A brief introduction to PACS, its history, and the growing need to optimise PACS network performance as imaging data increases. The project reviews network simulators, selects NS2 for its open‑source flexibility, surveys relevant literature, and outlines a plan to model and compare different network topologies to identify an optimised PACS network design."
+description: "A brief introduction to PACS, its history, and the growing need to optimise PACS network performance as imaging data increases. The project reviews network simulators, selects NS2 for its open‑source flexibility, surveys relevant literature, and outlines a plan to model and compare different network topologies to identify an optimised PACS network design."
 slug: "project-proposal-pacs-network-optimisation"
 aliases:
   - "/project-proposal-pacs-network-optimisation"
 categories:
-  - "System.Xml.XmlElement"
+  - "Dissertation"
+  - "Coursework"
 tags:
   - "Dissertation"
   - "Dissertation Project"

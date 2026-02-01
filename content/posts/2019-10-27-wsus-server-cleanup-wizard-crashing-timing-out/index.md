@@ -1,6 +1,8 @@
 ---
 title: "WSUS Server Cleanup Wizard Crashing/Timing out"
 date: 2019-10-27
+summary: "A quick note on resolving WSUS cleanup failures caused by long‑running SQL queries timing out; the fix involves connecting to the Windows Internal Database and increasing the query timeout value in the SQL instance properties so WSUS can complete its cleanup operations without crashing."
+description: "A quick note on resolving WSUS cleanup failures caused by long‑running SQL queries timing out; the fix involves connecting to the Windows Internal Database and increasing the query timeout value in the SQL instance properties so WSUS can complete its cleanup operations without crashing."
 slug: "wsus-server-cleanup-wizard-crashing-timing-out"
 aliases:
   - "/wsus-server-cleanup-wizard-crashing-timing-out"

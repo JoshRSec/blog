@@ -1,6 +1,8 @@
 ---
 title: "Minecraft Random MOTD Selector"
 date: 2019-11-18
+summary: "A lightweight PowerShell micro‑project that randomly selects and writes a MOTD to disk at each server restart, supports date‑based overrides for special events, and uses simple text files for phrases and colour codes—making it a fun, community‑driven addition to your MC monitoring workflow."
+description: "A lightweight PowerShell micro‑project that randomly selects and writes a MOTD to disk at each server restart, supports date‑based overrides for special events, and uses simple text files for phrases and colour codes—making it a fun, community‑driven addition to your MC monitoring workflow."
 slug: "minecraft-random-motd-selector"
 aliases:
   - "/minecraft-random-motd-selector"

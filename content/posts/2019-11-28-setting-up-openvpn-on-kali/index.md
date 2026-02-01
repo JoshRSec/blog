@@ -1,7 +1,8 @@
 ---
 title: "Setting up OpenVPN on Kali"
 date: 2019-11-28
-slug: "setting-up-openvpn-on-kali"
+summary: "A straightforward walkthrough for configuring OpenVPN on Kali or Debian by placing the provider’s certificates and config files in /etc/openvpn, setting up credential handling, enabling DNS updates, and configuring the service to auto‑start so the VPN connects reliably at boot."
+description: "A straightforward walkthrough for configuring OpenVPN on Kali or Debian by placing the provider’s certificates and config files in /etc/openvpn, setting up credential handling, enabling DNS updates, and configuring the service to auto‑start so the VPN connects reliably at boot."
 aliases:
   - "/setting-up-openvpn-on-kali"
 categories:

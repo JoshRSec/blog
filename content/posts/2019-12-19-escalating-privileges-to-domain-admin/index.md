@@ -1,6 +1,8 @@
 ---
 title: "Escalating Privileges to Domain Admin"
 date: 2019-12-19
+summary: "A quick overview of how local admin rights on a workstation can be misused to escalate privileges when a Domain Admin logs in, along with the reminder that proper least‑privilege policies prevent this risk."
+description: "A quick overview of how local admin rights on a workstation can be misused to escalate privileges when a Domain Admin logs in, along with the reminder that proper least‑privilege policies prevent this risk."
 slug: "escalating-privileges-to-domain-admin"
 aliases:
   - "/escalating-privileges-to-domain-admin"

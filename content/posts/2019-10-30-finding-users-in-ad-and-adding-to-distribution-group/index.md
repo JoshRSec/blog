@@ -1,6 +1,8 @@
 ---
 title: "Finding users in AD and adding to distribution group"
 date: 2019-10-30
+summary: "A simple PowerShell script that pulls users from Active Directory, checks whether they’re already members of an Exchange Online distribution group, and adds any missing users—making it easy to keep cloud‑hosted groups aligned with on‑prem AD."
+description: "A simple PowerShell script that pulls users from Active Directory, checks whether they’re already members of an Exchange Online distribution group, and adds any missing users—making it easy to keep cloud‑hosted groups aligned with on‑prem AD."
 slug: "finding-users-in-ad-and-adding-to-distribution-group"
 aliases:
   - "/finding-users-in-ad-and-adding-to-distribution-group"
