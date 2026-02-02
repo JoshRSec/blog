@@ -17,7 +17,7 @@ tags:
 
 This method may benefit from some social engineering but will require local Administrator on an machine within the network. Social engineering can be used to speedup the process of enticing a Domain Admin (DA) to login to a system and in-return provide us DA rights.
 
-Should you need to obtain local Administrator privileges and you have access to a machine which isn't using Bit-locker, [here is a guide on doing so](https://blog.joshuarobbins.tech/?p=285) (It wont take long).
+Should you need to obtain local Administrator privileges and you have access to a machine which isn't using Bit-locker, [here is a guide on doing so](https://blog.joshuarobbins.tech/gaining-entry-into-windows-with-administrative-permissions) (It wont take long).
 
 - Create a new scheduled task
 - Ensure the "Run with highest privileges" checkbox is checked
