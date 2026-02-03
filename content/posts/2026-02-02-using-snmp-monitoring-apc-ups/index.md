@@ -98,6 +98,12 @@ cd nut-2.8.4
 
 ### 4. Configure the build
 
+Install packages required to build
+
+```
+sudo apt install build-essential libusb-1.0-0-dev libsnmp-dev libssl-dev libtool automake autoconf pkg-config libgd-dev
+```
+
 Replace `nut` with the user/group you want NUT to run under.
 
 ```
@@ -117,7 +123,7 @@ Replace `nut` with the user/group you want NUT to run under.
 
 ```
 make
-make install
+sudo make install
 sudo make install-as-root
 ```
 
