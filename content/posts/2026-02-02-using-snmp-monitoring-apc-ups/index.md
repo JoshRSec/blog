@@ -4,7 +4,6 @@ date: 2026-02-02
 summary: "How to compile a modern version of NUT and configure SNMPv3 monitoring for APC UPS systems with AP9630 NMC."
 description: "A step-by-step guide to upgrading NUT, enabling SNMPv3 on APC AP9630, and configuring both USB and SNMP monitoring on a Raspberry Pi."
 slug: "using-snmp-monitoring-apc-ups"
-draft: false
 aliases:
   - "/using-snmp-monitoring-apc-ups"
 categories:
