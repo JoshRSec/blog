@@ -19,4 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- Render Blowfish's normal homepage content -->
 {{ partial "home/custom.html" . }}
 
+<!-- Blowfish v3 moved this out of home/profile.html and into its own index.html -->
+<section>
+  {{ partial "recent-articles/main.html" . }}
+</section>
+
 {{ end }}
